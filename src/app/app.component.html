@@ -3,7 +3,7 @@
 	.r {
 		border: 1px solid #000;
 		padding: 5px;
-    margin-bottom: 50px;
+		margin-bottom: 50px;
 	}
 
 	.c {
@@ -19,9 +19,9 @@
 		border: 1px solid red
 	}
 
-  li:first-child {
-  list-style-type: none;
-}
+	li:first-child {
+		list-style-type: none;
+	}
 </style>
 
 <div class="row">
@@ -29,6 +29,7 @@
 		<h1>Bootstrap Grid</h1>
 	</div>
 </div>
+
 <p></p>
 
 <div class="wrapper">
@@ -38,19 +39,19 @@
 			and wrap niceley when it gets to the end of this very long paragraph of important words and other text.</p>
 
 		<div class="row r">
-			<div class="col-2 c">
-				<input type="checkbox">	Check Box
+			<div class="col-md-10 col-sm-6 order-md-12 c">
+				<ul>
+					<li>By ticking this box I agree to:</li>
+					<li>I agree to some terms that are printed right here </li>
+					<li>I agree to some terms that are printed right here </li>
+					<li>I agree to some terms that are printed right here </li>
+					<li>I agree to some terms that are printed right here </li>
+				</ul>
 			</div>
 
-				<div class="col-10 c">
-					<ul>
-						<li style="">By ticking this box I agree to:</li>
-						<li>I agree to some terms that are printed right here </li>
-						<li>I agree to some terms that are printed right here </li>
-						<li>I agree to some terms that are printed right here </li>
-						<li>I agree to some terms that are printed right here </li>
-					</ul>
-				</div>
+			<div class="col-md-2 col-sm-6 order-md-2 c">
+				<input type="checkbox">	I Agree
+			</div>
 			</div>
 
 			<div class="row r">
@@ -72,5 +73,22 @@
 					Error: Ooops it went wonky, come back later.
 				</div>
 			</div>
+
+			<div class="row r">
+				<div class="col" style="border: 5px solid orange">
+					row 1 Col 1 some text 1 some text 1 some text 1 some text 1 some text 1 some text 1 some text 1 some
+					text
+				</div>
+				<div class="col" style="border: 5px solid orange">
+					row 1 Col 1 some text 1 some text 1 some text 1 some text 1 some text 1 some text 1 some text 1 some
+					text
+				</div>
+				<div class="col" style="border: 5px solid orange">
+					row 1 Col 1 some text 1 some text 1 some text 1 some text 1 some text 1 some text 1 some text 1 some
+					text
+				</div>
+			</div>
+
 		</div>
+
 	</div>

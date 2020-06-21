@@ -1,5 +1,76 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
-<div 
+<!--<hello name="{{ name }}"></hello>-->
+<style>
+	.r {
+		border: 1px solid #000;
+		padding: 5px;
+    margin-bottom: 50px;
+	}
+
+	.c {
+		border: 1px solid #00FF00;
+	}
+
+	.wrapper {
+		border: 1px solid blue;
+		padding: 5px
+	}
+
+	.container {
+		border: 1px solid red
+	}
+
+  li:first-child {
+  list-style-type: none;
+}
+</style>
+
+<div class="row">
+	<div class="col">
+		<h1>Bootstrap Grid</h1>
+	</div>
+</div>
+<p></p>
+
+<div class="wrapper">
+	<div class="container">
+		<h2>Self submit Title</h2>
+		<p>Intro to the self submit, this should fill the container which is the red border on the outside of this box
+			and wrap niceley when it gets to the end of this very long paragraph of important words and other text.</p>
+
+		<div class="row r">
+			<div class="col-2 c">
+				<input type="checkbox">	Check Box
+			</div>
+
+				<div class="col-10 c">
+					<ul>
+						<li style="">By ticking this box I agree to:</li>
+						<li>I agree to some terms that are printed right here </li>
+						<li>I agree to some terms that are printed right here </li>
+						<li>I agree to some terms that are printed right here </li>
+						<li>I agree to some terms that are printed right here </li>
+					</ul>
+				</div>
+			</div>
+
+			<div class="row r">
+				<div class="col col-sm-12 c">
+					<button class="btn btn-primary">Self Submit</button>
+				</div>
+			</div>
+
+			<p></p>
+
+			<div class="row r">
+				<div class="col c">
+					Success: thank you for your self submission, your documents will be processed shortly.
+				</div>
+			</div>
+
+			<div class="row r">
+				<div class="col" style="border: 5px solid orange">
+					Error: Ooops it went wonky, come back later.
+				</div>
+			</div>
+		</div>
+	</div>
